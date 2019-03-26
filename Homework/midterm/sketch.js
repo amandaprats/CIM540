@@ -7,14 +7,14 @@ var page0,page1,page2,page3,page4,page5,page6,page7;
 var currentPage = 0;
 
 function preload(){
-  imageArray [0] = loadImage("assets/page0.jpg");
-  imageArray [1] = loadImage("assets/page1.jpg");
-  imageArray [2] = loadImage("assets/page2.jpg");
-  imageArray [3] = loadImage("assets/page3.jpg");
-  imageArray [4] = loadImage("assets/page4.jpg");
-  imageArray [5] = loadImage("assets/page5.jpg");
-  imageArray [6] = loadImage("assets/page6.jpg");
-  imageArray [7] = loadImage("assets/page7.jpg");
+  imageArray[0] = loadImage("assets/page0.jpg");
+  imageArray[1] = loadImage("assets/page1.jpg");
+  imageArray[2] = loadImage("assets/page2.jpg");
+  imageArray[3] = loadImage("assets/page3.jpg");
+  imageArray[4] = loadImage("assets/page4.jpg");
+  imageArray[5] = loadImage("assets/page5.jpg");
+  imageArray[6] = loadImage("assets/page6.jpg");
+  imageArray[7] = loadImage("assets/page7.jpg");
 
   logo = loadImage("assets/tata.png");
 }
