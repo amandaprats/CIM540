@@ -2,19 +2,19 @@ var imageArray = [];
 
 var guideText = ["","",];
 
-var page0,page1,page2,page3,page4,page5,page6,page7;
+var Page0,Page1,Page2,Page3,Page4,Page5,Page6,Page7;
 
 var currentPage = 0;
 
 function preload(){
-  imageArray[0] = loadImage("assets/page0.jpg");
-  imageArray[1] = loadImage("assets/page1.jpg");
-  imageArray[2] = loadImage("assets/page2.jpg");
-  imageArray[3] = loadImage("assets/page3.jpg");
-  imageArray[4] = loadImage("assets/page4.jpg");
-  imageArray[5] = loadImage("assets/page5.jpg");
-  imageArray[6] = loadImage("assets/page6.jpg");
-  imageArray[7] = loadImage("assets/page7.jpg");
+  imageArray[0] = loadImage("assets/Page0.jpg");
+  imageArray[1] = loadImage("assets/Page1.jpg");
+  imageArray[2] = loadImage("assets/Page2.jpg");
+  imageArray[3] = loadImage("assets/Page3.jpg");
+  imageArray[4] = loadImage("assets/Page4.jpg");
+  imageArray[5] = loadImage("assets/Page5.jpg");
+  imageArray[6] = loadImage("assets/Page6.jpg");
+  imageArray[7] = loadImage("assets/Page7.jpg");
 
   logo = loadImage("assets/tata.png");
 }
@@ -23,44 +23,44 @@ function setup() {
   // put setup code here
   createCanvas(810,950);
 
-  page0 = createButton("Tata");
-  page0.position(10,920);
-  page0.mousePressed(function(){
+  Page0 = createButton("Tata");
+  Page0.position(10,920);
+  Page0.mousePressed(function(){
     currentPage = 0;
   });
-  page1 = createButton("Welcome!");
-  page1.position(80,920);
-  page1.mousePressed(function(){
+  Page1 = createButton("Welcome!");
+  Page1.position(80,920);
+  Page1.mousePressed(function(){
     currentPage = 1;
   });
-  page2 = createButton("Your Cycle");
-  page2.position(190,920);
-  page2.mousePressed(function(){
+  Page2 = createButton("Your Cycle");
+  Page2.position(190,920);
+  Page2.mousePressed(function(){
     currentPage = 2;
   });
-  page3 = createButton("Your Options");
-  page3.position(300,920);
-  page3.mousePressed(function(){
+  Page3 = createButton("Your Options");
+  Page3.position(300,920);
+  Page3.mousePressed(function(){
     currentPage = 3;
   });
-  page4 = createButton("Your Options");
-  page4.position(430,920);
-  page4.mousePressed(function(){
+  Page4 = createButton("Your Options");
+  Page4.position(430,920);
+  Page4.mousePressed(function(){
     currentPage = 4;
   });
-  page5 = createButton("Puberty");
-  page5.position(560,920);
-  page5.mousePressed(function(){
+  Page5 = createButton("Puberty");
+  Page5.position(560,920);
+  Page5.mousePressed(function(){
     currentPage = 5;
   });
-  page6 = createButton("PMS");
-  page6.position(650,920);
-  page6.mousePressed(function(){
+  Page6 = createButton("PMS");
+  Page6.position(650,920);
+  Page6.mousePressed(function(){
     currentPage = 6;
   });
-  page7 = createButton("The End");
-  page7.position(730,920);
-  page7.mousePressed(function(){
+  Page7 = createButton("The End");
+  Page7.position(730,920);
+  Page7.mousePressed(function(){
     currentPage = 7;
   });
 }
@@ -69,10 +69,10 @@ function draw(){
   // put drawing code here
   background("#f69676");
   image(logo,50,50,logo.width/3,logo.height/3);
-  text("To jump to a specific page, click one of the buttons below.", 170,50);
-  text("To jump through pages, use your number keys.", 170,70);
+  text("To jump to a specific Page, click one of the buttons below.", 170,50);
+  text("To jump through Pages, use your number keys.", 170,70);
   text("To define a bolded word, hover over it. The definition will appear below.", 170,90);
-  // text("To flip pages, use your left and right arrow keys.", 170,90);
+  // text("To flip Pages, use your left and right arrow keys.", 170,90);
   //image(imageArray[currentPage],0,0);
 
   if(currentPage == 0 || currentPage == 7){
@@ -90,7 +90,7 @@ function draw(){
     text("Your period is when blood and tissue from your uterus comes out of your vagina.", 20, 850);}
 
     if(currentPage == 7){
-      text("Click the logo to return to the first page", 480, 480);
+      text("Click the logo to return to the first Page", 480, 480);
     }
 
 
