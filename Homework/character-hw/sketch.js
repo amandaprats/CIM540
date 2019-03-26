@@ -1,6 +1,8 @@
 //Global Variables
 var backgroundColor = "grey"; //Strings
-var snoutColor = "	#8B4513";
+var snoutColor = "#8B4513";
+var insideEar = "tan";
+
 
 function setup() {
   // put setup code here
@@ -17,7 +19,8 @@ function draw() {
   fill ("black");
   triangle(230,150,200,80,190,150);
   triangle(230+90,150,200+90,80,190+90,150);
-  fill ("pink");
+  //innerear
+  fill (insideEar);
   triangle(220,150,200,100,195,150);
   triangle(220+90,150,200+90,100,195+90,150);
 
@@ -34,10 +37,6 @@ function draw() {
   fill ("black");
   ellipse (205,174,25,25);
   ellipse (285,174,25,25);
-
-  //nose
-  fill ("pink");
-  rect(240,225,20,10,5);
 
   //bottomsnout
   fill (snoutColor);
@@ -56,4 +55,16 @@ function draw() {
   fill (snoutColor);
   ellipse (250,260,100,40);
 
+  //nose
+  fill ("pink");
+  rect(240,240,20,10,5);
+
+}
+
+function mousePressed() {
+  backgroundColor = "pink";
+}
+
+function mouseReleased() {
+  backgroundColor = "grey";
 }
