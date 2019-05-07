@@ -126,8 +126,9 @@ function draw() {
     image(capture, 0, 0, capture.width*1.6, capture.height*1.6);
 
     fill("#FFFFFF");
-    text("Take a picture, then use the slider to set your grid size.", 10, 25);
-    text("Click a color below to select a color, then click on boxes to fill them in.",10,40);
+    text("COLOR BLOCKED", 10, 15);
+    text("Take a picture, then use the slider to set your grid size.", 10, 30);
+    text("Click a color below to select a color, then click on boxes to fill them in.",10,45);
 
     for(var i in colorBox){
       colorBox[i].display();
