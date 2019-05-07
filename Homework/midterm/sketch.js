@@ -85,14 +85,12 @@ function draw(){
   }
 
   if(currentPage == 2 && mouseX > 420 && mouseX < 900 && mouseY < 480 && mouseY > 480){
-    text("Your period is when blood and tissue from your uterus comes out of your vagina.", 20, 850);}
+    text("Your period is when blood and tissue from your uterus comes out of your vagina.", 20, 850);
+  }
 
-    if(currentPage == 7){
+  if(currentPage == 7){
       text("Click the logo to return to the first Page", 480, 480);
     }
-
-
-
 
     if(currentPage == 7 && mouseX > 500 && mouseX < 700 && mouseY > 400 && mouseY < 500 && mouseIsPressed){
       currentPage = 0;
